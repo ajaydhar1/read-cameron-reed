@@ -497,3 +497,11 @@ html {
   border-radius: 18px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
 }
+
+.guide-overview {
+    margin: 1.5rem 0;
+}
+
+.guide-overview p {
+    margin: 0.5rem 0;
+}
