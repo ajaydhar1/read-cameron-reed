@@ -230,11 +230,22 @@ h3 {
   }
 }
 
+.book-cover {
+  width: min(220px, 100%);
+  border-radius: 12px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+
+  margin: 0 auto 1.5rem;
+  display: block;
+}
+
 /* ==========================================================
    Homepage
    ========================================================== */
 
-#books, #guides, #about {
+#books,
+#guides,
+#about {
   scroll-margin-top: 30px;
 }
 
@@ -347,6 +358,30 @@ h3 {
   .chapter-nav {
     flex-direction: column;
   }
+}
+
+.chapter-book {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+
+  margin: 1.5rem 0;
+  padding: 0.75rem 1rem;
+
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+}
+
+.chapter-book-cover {
+  width: 56px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+}
+
+.chapter-book span {
+  color: var(--text-muted);
+  font-size: 0.9rem;
 }
 
 /* ==========================================================
@@ -509,9 +544,51 @@ html {
 }
 
 .guide-overview {
-    margin: 1.5rem 0;
+  margin: 1.5rem 0;
 }
 
 .guide-overview p {
-    margin: 0.5rem 0;
+  margin: 0.5rem 0;
+}
+
+.doc-hero-with-cover {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 2rem;
+  align-items: center;
+}
+
+.doc-book-cover {
+  width: 220px;
+  max-width: 100%;
+  margin: 0;
+  justify-self: center;
+}
+
+@media (max-width: 700px) {
+  .doc-hero-with-cover {
+    grid-template-columns: 1fr;
+  }
+
+  .doc-book-cover {
+    order: -1;
+    margin: 0 auto 1.25rem;
+  }
+}
+
+.doc-book-cover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.doc-book-cover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, .22);
+}
+
+.doc-hero-image {
+  max-width: 720px;
+  width: 100%;
+  margin: 2rem auto 0;
+  display: block;
+  border-radius: 16px;
 }
