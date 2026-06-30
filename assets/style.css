@@ -704,6 +704,120 @@ html {
   line-height: 1.55;
 }
 
-.dictionary-entry section + section {
-    margin-top: 4.5rem;
+.dictionary-entry section+section {
+  margin-top: 4.5rem;
+}
+
+.dictionary-card {
+  margin-top: 1.5rem;
+  padding: 2rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, .04);
+  border: 1px solid rgba(255, 255, 255, .08);
+}
+
+.dictionary-card h3 {
+  margin-top: 0;
+}
+
+.dictionary-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.dictionary-list,
+.coming-soon {
+  display: grid;
+  gap: .6rem;
+  margin-top: 1rem;
+}
+
+.coming-soon li {
+  opacity: .7;
+}
+
+.dictionary-index {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.dictionary-index section {
+  margin-top: 4rem;
+}
+
+.dictionary-index .doc-hero {
+  margin-top: 0;
+}
+
+.dictionary-card {
+  margin-top: 1.25rem;
+  padding: 2rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.dictionary-card h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.8rem;
+}
+
+.dictionary-card p {
+  max-width: 620px;
+}
+
+.dictionary-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.dictionary-link:hover {
+  text-decoration: underline;
+}
+
+.dictionary-list,
+.coming-soon {
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 1rem;
+  padding-left: 1.25rem;
+}
+
+.coming-soon li {
+  opacity: 0.75;
+}
+
+@media (max-width: 640px) {
+  .dictionary-index {
+    padding: 2rem 0;
+  }
+
+  .dictionary-index section {
+    margin-top: 3rem;
+  }
+
+  .dictionary-card {
+    padding: 1.35rem;
+  }
+}
+
+.dictionary-banner {
+    max-width: 1100px;
+    margin: 3rem auto 4rem;
+}
+
+.dictionary-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, .35);
+
+  border: 1px solid rgba(255, 255, 255, .08);
 }
