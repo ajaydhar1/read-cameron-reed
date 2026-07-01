@@ -821,3 +821,51 @@ html {
 
   border: 1px solid rgba(255, 255, 255, .08);
 }
+
+/* ==========================================================
+   Book's On Our Radar
+   ========================================================== */
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.book-card {
+  background: var(--card-bg, #fff);
+  border: 1px solid var(--border-color, #e5e0d8);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
+.book-cover {
+  aspect-ratio: 2 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.placeholder-cover {
+  background: linear-gradient(135deg, #f0e7d8, #d9c7aa);
+  color: #5c4a35;
+}
+
+.book-card-body {
+  padding: 1rem;
+}
+
+.book-card h3 {
+  margin: 0.25rem 0;
+}
+
+.book-author {
+  margin: 0 0 0.75rem;
+  font-style: italic;
+  color: var(--muted-text, #6f665c);
+}
+
