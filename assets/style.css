@@ -249,6 +249,34 @@ h3 {
   scroll-margin-top: 30px;
 }
 
+.recent-list {
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+}
+
+.recent-list li {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.recent-list li:last-child {
+  border-bottom: none;
+}
+
+.recent-list li {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background: var(--surface-color);
+}
+
 /* ==========================================================
    Chapter Guide Pages
    ========================================================== */
@@ -806,8 +834,8 @@ html {
 }
 
 .dictionary-banner {
-    max-width: 1100px;
-    margin: 3rem auto 4rem;
+  max-width: 1100px;
+  margin: 3rem auto 4rem;
 }
 
 .dictionary-banner img {
@@ -869,3 +897,14 @@ html {
   color: var(--muted-text, #6f665c);
 }
 
+.hero-social-card {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+
+  margin: 2rem auto 0;
+
+  border-radius: 18px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
