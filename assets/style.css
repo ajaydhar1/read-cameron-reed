@@ -908,3 +908,107 @@ html {
   border: 1px solid var(--border-color);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
 }
+
+/* ==========================================================
+   Reader's Reflections
+   ========================================================== */
+
+.reflection-shell {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.reflection-entry {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 3rem;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top left, rgba(185, 141, 91, 0.16), transparent 34%),
+    linear-gradient(180deg, #fffaf2 0%, #fff7ec 100%);
+  border: 1px solid rgba(117, 83, 46, 0.16);
+  box-shadow: 0 24px 70px rgba(84, 57, 29, 0.12);
+}
+
+.reflection-entry h1 {
+  max-width: 680px;
+  margin: 0.5rem 0 2rem;
+  font-size: clamp(2.2rem, 6vw, 4.25rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.reflection-prose {
+  font-size: clamp(1.08rem, 2vw, 1.28rem);
+  line-height: 1.85;
+  color: #3e3023;
+}
+
+.reflection-prose p {
+  margin: 0 0 1.15rem;
+}
+
+.reflection-opening {
+  max-width: 650px;
+}
+
+.reflection-opening strong {
+  color: #24180f;
+}
+
+.reflection-bridge {
+  margin: 2.5rem 0 1rem;
+  font-size: 0.92rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #8b6846;
+  font-weight: 700;
+}
+
+.reflection-card {
+  padding: 2rem;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.66);
+  border: 1px solid rgba(117, 83, 46, 0.16);
+}
+
+.reflection-card p:last-child,
+.reflection-opening p:last-child {
+  margin-bottom: 0;
+}
+
+.reflection-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(117, 83, 46, 0.18);
+  color: #8b6846;
+  font-size: 0.95rem;
+}
+
+.reflection-nav a {
+  color: #5f3f22;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.reflection-nav a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .reflection-entry {
+    padding: 2rem 1.35rem;
+    border-radius: 22px;
+  }
+
+  .reflection-card {
+    padding: 1.35rem;
+  }
+
+  .reflection-nav {
+    flex-direction: column;
+  }
+}
