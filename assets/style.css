@@ -633,7 +633,6 @@ html {
 
 .dictionary-entry .eyebrow {
   margin-bottom: 0.75rem;
-  color: #8aa4d6;
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -1011,4 +1010,81 @@ html {
   .reflection-nav {
     flex-direction: column;
   }
+}
+
+.reflection-notebook-entry {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.reflection-notebook-entry .reflection-prose,
+.reflection-notebook-entry .reflection-bridge,
+.reflection-notebook-entry .reflection-nav {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reflection-notebook-entry .reflection-note {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid #c9a66b;
+  background: #fbf7ef;
+  color: #5f5140;
+  font-size: 0.98rem;
+}
+
+.reflection-notebook-entry .reflection-prose {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1.75rem;
+  background: #fffdf8;
+  border: 1px solid #eadfcd;
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(70, 48, 25, 0.08);
+}
+
+.reflection-notebook-entry .reflection-opening {
+  margin-top: 2.5rem;
+}
+
+.reflection-notebook-entry .reflection-prose p,
+.reflection-notebook-entry .reflection-prose li {
+  line-height: 1.75;
+}
+
+.reflection-notebook-entry .reflection-prose h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.reflection-notebook-entry .reflection-prose blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid #9f7d4a;
+  background: #f7efe1;
+  font-style: italic;
+}
+
+.reflection-notebook-entry .reflection-card {
+  background: #fbf7ef;
+  font-size: 1.08rem;
+}
+
+.reflection-notebook-entry .reflection-bridge {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-style: italic;
+  color: #6f5d47;
+}
+
+.reflection-notebook-entry .reflection-nav {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.95rem;
 }
