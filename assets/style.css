@@ -621,6 +621,13 @@ html {
   border-radius: 16px;
 }
 
+.doc-note {
+  margin-top: 1.5rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
 /* ==========================================================
    Reader's Dictionary
    ========================================================== */
