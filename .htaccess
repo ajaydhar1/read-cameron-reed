@@ -5,5 +5,9 @@ ErrorDocument 500 /500.html
 
 RewriteEngine On
 
+# Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.readcameronreed\.com$ [NC]
+RewriteRule ^(.*)$ https://readcameronreed.com/$1 [R=301,L]
+
 # Redirect old Readers Reflections URLs to the new Reflections URLs
 RewriteRule ^readers-reflections/(.*)$ /reflections/$1 [R=301,L]
